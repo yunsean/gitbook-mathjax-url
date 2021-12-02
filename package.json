@@ -1,13 +1,12 @@
 {
   "name": "gitbook-plugin-mathjax-url",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Add MathJax with cdn to the gitbook",
   "keywords": ["MathJax", "gitbook"],
   "author": {
     "name": "Dylan Chi",
     "email": "yunsean@163.com"
   },
-  "main": "index.js",
   "repository": {
       "type" : "git",
       "url" : "https://github.com/yunsean/gitbook-mathjax-url"
