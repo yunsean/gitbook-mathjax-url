@@ -2,8 +2,8 @@ var moment = require('moment');
 module.exports = {
   hooks: {
     'page:before': function(page) {
-      var str = ' this is from dylan'
-      page.content = page.content + str;
+      var str = '<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>\n<script type="text/x-mathjax-config">\n    MathJax.Hub.Config({\n        tex2jax: {\n            inlineMath: [['$$','$$'], ['$','$'], ['\\(','\\)']],\n            processEscapes: true\n        }\n    });\n</script> '
+      page.header = page.content + str;
       return page;
     }
   }
