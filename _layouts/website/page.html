@@ -1,14 +1,11 @@
 {% extends template.self %}
 
-{% block mathjax %}
-    {{ super1() }}
-    <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>  
-    <script type="text/x-mathjax-config">  
-      MathJax.Hub.Config({
-          tex2jax: {
-              inlineMath: [['$$','$$'], ['$','$'], ['\\(','\\)']],
-              processEscapes: true
-          }
-      });
-    </script> 
-{% endblock %}
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+<script type="text/x-mathjax-config">  
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$$','$$'], ['$','$'], ['\\(','\\)']],
+          processEscapes: true
+      }
+  });
+</script> 
