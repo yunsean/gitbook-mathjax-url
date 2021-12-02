@@ -1,3 +1,3 @@
 window.gitbook.events.on('page.change', function() {
-  MathJax.Hub.Queue(["Typeset", MathJax.Hub]);    
+  if (MathJax) MathJax.Hub.Queue(["Typeset", MathJax.Hub]);    
 });
